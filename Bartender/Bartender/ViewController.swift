@@ -42,6 +42,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Bar Tender "
         // Do any additional setup after loading the view, typically from a nib.
         /*
         CGFloat; maxY = CGRectGetMaxY(self.txtEmail.frame);

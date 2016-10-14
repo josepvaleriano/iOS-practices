@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -102,7 +101,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="kXx-Fw-CmC" kind="show" id="AvZ-4S-DVx"/>
+                                    <segue destination="kXx-Fw-CmC" kind="show" id="c7p-FS-7Kc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -117,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="1686" y="418"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalle Trago-->
         <scene sceneID="Vlj-rz-nOs">
             <objects>
-                <viewController id="kXx-Fw-CmC" sceneMemberID="viewController">
+                <viewController id="kXx-Fw-CmC" customClass="DetalleTrago" customModule="Bartender" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H2q-MH-6q4"/>
                         <viewControllerLayoutGuide type="bottom" id="dSE-au-Dug"/>
@@ -129,23 +128,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yZ4-tL-HMC">
-                                <rect key="frame" x="180" y="83" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yZ4-tL-HMC">
+                                <rect key="frame" x="180" y="126" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="CQF-Le-UIc"/>
+                                    <constraint firstAttribute="width" constant="120" id="nlM-Ub-CDf"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ingredientes" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAb-7H-x10">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ingredientes" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAb-7H-x10">
                                 <rect key="frame" x="180" y="282" width="240" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Directions" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Y-L2-wgc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Directions" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Y-L2-wgc">
                                 <rect key="frame" x="180" y="329" width="240" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Titulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCz-qu-85z">
-                                <rect key="frame" x="180" y="235" width="240" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Titulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCz-qu-85z">
+                                <rect key="frame" x="180" y="81" width="240" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -153,18 +156,26 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="YAb-7H-x10" secondAttribute="trailing" constant="10" id="1GR-MU-h4W"/>
+                            <constraint firstItem="YAb-7H-x10" firstAttribute="top" secondItem="yZ4-tL-HMC" secondAttribute="bottom" constant="20" id="3oq-cL-ztu"/>
+                            <constraint firstItem="Y4Y-L2-wgc" firstAttribute="top" secondItem="YAb-7H-x10" secondAttribute="bottom" constant="20" id="Dnh-Jj-yFc"/>
                             <constraint firstItem="Y4Y-L2-wgc" firstAttribute="leading" secondItem="TTP-qB-A4P" secondAttribute="leadingMargin" constant="10" id="F1Q-H9-il1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Y4Y-L2-wgc" secondAttribute="trailing" constant="10" id="Fe6-Hx-Ftc"/>
-                            <constraint firstItem="YAb-7H-x10" firstAttribute="leading" secondItem="TTP-qB-A4P" secondAttribute="leadingMargin" constant="10" id="IIX-fw-RYR"/>
-                            <constraint firstItem="yZ4-tL-HMC" firstAttribute="top" secondItem="H2q-MH-6q4" secondAttribute="bottom" constant="20" id="N5Q-F3-QMh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YAb-7H-x10" secondAttribute="trailing" constant="10" id="I4b-gm-tDx"/>
                             <constraint firstItem="yZ4-tL-HMC" firstAttribute="centerX" secondItem="TTP-qB-A4P" secondAttribute="centerX" id="QUV-Am-AM2"/>
+                            <constraint firstItem="yZ4-tL-HMC" firstAttribute="top" secondItem="lCz-qu-85z" secondAttribute="bottom" constant="20" id="bhf-te-Nre"/>
                             <constraint firstItem="Y4Y-L2-wgc" firstAttribute="centerX" secondItem="TTP-qB-A4P" secondAttribute="centerX" id="c2B-2O-n26"/>
                             <constraint firstItem="lCz-qu-85z" firstAttribute="centerX" secondItem="TTP-qB-A4P" secondAttribute="centerX" id="fIX-nr-vue"/>
-                            <constraint firstItem="lCz-qu-85z" firstAttribute="top" secondItem="yZ4-tL-HMC" secondAttribute="bottom" constant="20" id="un2-4S-NJS"/>
+                            <constraint firstItem="YAb-7H-x10" firstAttribute="leading" secondItem="TTP-qB-A4P" secondAttribute="leadingMargin" constant="10" id="i53-sg-BiC"/>
+                            <constraint firstItem="lCz-qu-85z" firstAttribute="top" secondItem="H2q-MH-6q4" secondAttribute="bottom" constant="20" id="loc-oj-ugJ"/>
                             <constraint firstItem="YAb-7H-x10" firstAttribute="centerX" secondItem="TTP-qB-A4P" secondAttribute="centerX" id="zR4-6G-lw1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgDrink" destination="yZ4-tL-HMC" id="EKw-V7-lbZ"/>
+                        <outlet property="txtBebida" destination="lCz-qu-85z" id="JZI-K7-g9g"/>
+                        <outlet property="txtDirection" destination="Y4Y-L2-wgc" id="49J-HR-e9y"/>
+                        <outlet property="txtIngredientes" destination="YAb-7H-x10" id="MFY-cG-4og"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Dx-Eb-qSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

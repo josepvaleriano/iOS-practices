@@ -21,6 +21,16 @@ class FugitivosTableViewController: UITableViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        //super.viewDidAppear(animated)
+        //self.cargarTabla()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        //super.viewWillAppear(animated)
+        self.cargarTabla()
+    }
+    
+    func cargarTabla(){
         self.losFugados = DBManager.instance.encuentraTodosLosFiltrados("Fugitive", NSPredicate (format: "captured=%d",estaCapturado))
         
         print("\t tableviewControler principal capturado");
@@ -82,31 +92,40 @@ class FugitivosTableViewController: UITableViewController {
 
         let elFugitivo = self.losFugados![indexPath.row] as! Fugitive
         
-        cell.textLabel!.text = elFugitivo.name! + " " + elFugitivo.desc!
+        cell.textLabel!.text = elFugitivo.name! + " --> " + elFugitivo.desc!
 
         return cell
     }
     
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+    
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            let elFugitivo = self.losFugados![indexPath.row] as! Fugitive
+            do{
+                //eliminamos el objeto del arreglo
+                 DBManager.instance.managedObjetContext?.deleteObject(elFugitivo)
+                //eliminamos el objeto de la base de datos
+                try DBManager.instance.managedObjetContext?.save()
+                self.cargarTabla()
+            }catch{
+                print("No se pudo eliminar el objeto del arreblo o problema en la base de datos")
+            }
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.

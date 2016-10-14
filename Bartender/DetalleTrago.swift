@@ -14,12 +14,17 @@ class DetalleTrago: UIViewController {
     var info:NSDictionary?
     
     @IBOutlet weak var imgDrink: UIImageView!
+    //@IBOutlet weak var imgDrink: UIImageView!
+   // @IBOutlet weak var txtBebida: UILabel!
+    
     @IBOutlet weak var txtBebida: UILabel!
+    //@IBOutlet weak var imgDrk: UIImageView!
+    //@IBOutlet weak var txtIngredientes: UILabel!
     
     @IBOutlet weak var txtIngredientes: UILabel!
+    //@IBOutlet weak var txtDirection: UILabel!
     
     @IBOutlet weak var txtDirection: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,12 +38,12 @@ class DetalleTrago: UIViewController {
     
     
     override func viewWillAppear(animated: Bool) {
-        
-        
+        let ingre = self.info?["ingredients"] as! String
+        let dire = self.info?["directions"] as! String
         txtBebida.text = self.info?["name"] as! String
         imgDrink.image = UIImage(named: self.info?["image"] as! String)
-        txtIngredientes.text = self.info?["ingredients"] as! String
-        txtDirection.text = self.info?["directions"] as! String
+        txtIngredientes.text = "Ingredientes:" + ingre
+        txtDirection.text = "Prepared:"+ dire
         
     }
 

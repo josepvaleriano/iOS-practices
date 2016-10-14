@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		503B3D391D9FBC8D005F155E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B3D381D9FBC8D005F155E /* AppDelegate.swift */; };
+		503B3D3B1D9FBC8D005F155E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B3D3A1D9FBC8D005F155E /* ViewController.swift */; };
+		503B3D3E1D9FBC8D005F155E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503B3D3C1D9FBC8D005F155E /* Main.storyboard */; };
+		503B3D401D9FBC8D005F155E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503B3D3F1D9FBC8D005F155E /* Assets.xcassets */; };
+		503B3D431D9FBC8D005F155E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503B3D411D9FBC8D005F155E /* LaunchScreen.storyboard */; };
+		503B3D4B1D9FBCE5005F155E /* CumtomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B3D4A1D9FBCE5005F155E /* CumtomLabel.swift */; };
+		503B3D4F1D9FC1D1005F155E /* Champagne & Limousines.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 503B3D4E1D9FC1D1005F155E /* Champagne & Limousines.ttf */; };
+		503B3D501D9FC39A005F155E /* Champagne & Limousines Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 503B3D4C1D9FBD1F005F155E /* Champagne & Limousines Bold.ttf */; };
+		503B3D521D9FC51E005F155E /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B3D511D9FC51E005F155E /* Constans.swift */; };
+		503B3D551D9FCF3F005F155E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B3D541D9FCF3F005F155E /* CustomTextField.swift */; };
+		503B3D5B1D9FE046005F155E /* BountyHunter.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 503B3D5A1D9FE046005F155E /* BountyHunter.sqlite */; };
+		503B3D5D1D9FE56B005F155E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503B3D5C1D9FE56B005F155E /* CoreData.framework */; };
+		503B3DA41D9FE8A4005F155E /* BountyHunterModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 503B3DA21D9FE8A4005F155E /* BountyHunterModel.xcdatamodeld */; };
+		503B3DA71D9FEEEC005F155E /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B3DA61D9FEEEC005F155E /* DBManager.swift */; };
+		5052E8F81DA93EA100FB49FF /* FugitivosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5052E8F71DA93EA100FB49FF /* FugitivosTableViewController.swift */; };
+		5052E8FB1DA9452100FB49FF /* Fugitive+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5052E8F91DA9452100FB49FF /* Fugitive+CoreDataProperties.swift */; };
+		5052E8FC1DA9452100FB49FF /* Fugitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5052E8FA1DA9452100FB49FF /* Fugitive.swift */; };
+		5052E8FE1DA9537700FB49FF /* CapturadosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5052E8FD1DA9537700FB49FF /* CapturadosTableViewController.swift */; };
+		5052E9001DA953F600FB49FF /* CapturadosTabVieCon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5052E8FF1DA953F600FB49FF /* CapturadosTabVieCon.swift */; };
+		5052E9021DA9688C00FB49FF /* NuevoFugitivoVieCon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5052E9011DA9688C00FB49FF /* NuevoFugitivoVieCon.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		503B3D351D9FBC8D005F155E /* BrouryHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrouryHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		503B3D381D9FBC8D005F155E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		503B3D3A1D9FBC8D005F155E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		503B3D3D1D9FBC8D005F155E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		503B3D3F1D9FBC8D005F155E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		503B3D421D9FBC8D005F155E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		503B3D441D9FBC8D005F155E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		503B3D4A1D9FBCE5005F155E /* CumtomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CumtomLabel.swift; path = ../CumtomLabel.swift; sourceTree = "<group>"; };
+		503B3D4C1D9FBD1F005F155E /* Champagne & Limousines Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines Bold.ttf"; sourceTree = "<group>"; };
+		503B3D4E1D9FC1D1005F155E /* Champagne & Limousines.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines.ttf"; sourceTree = "<group>"; };
+		503B3D511D9FC51E005F155E /* Constans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constans.swift; path = ../Constans.swift; sourceTree = "<group>"; };
+		503B3D541D9FCF3F005F155E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		503B3D5A1D9FE046005F155E /* BountyHunter.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = BountyHunter.sqlite; path = ../BountyHunter.sqlite; sourceTree = "<group>"; };
+		503B3D5C1D9FE56B005F155E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		503B3DA31D9FE8A4005F155E /* BountyHunterModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BountyHunterModel.xcdatamodel; sourceTree = "<group>"; };
+		503B3DA61D9FEEEC005F155E /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		5052E8F71DA93EA100FB49FF /* FugitivosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FugitivosTableViewController.swift; path = ../FugitivosTableViewController.swift; sourceTree = "<group>"; };
+		5052E8F91DA9452100FB49FF /* Fugitive+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fugitive+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5052E8FA1DA9452100FB49FF /* Fugitive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fugitive.swift; sourceTree = "<group>"; };
+		5052E8FD1DA9537700FB49FF /* CapturadosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CapturadosTableViewController.swift; path = ../CapturadosTableViewController.swift; sourceTree = "<group>"; };
+		5052E8FF1DA953F600FB49FF /* CapturadosTabVieCon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturadosTabVieCon.swift; sourceTree = "<group>"; };
+		5052E9011DA9688C00FB49FF /* NuevoFugitivoVieCon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NuevoFugitivoVieCon.swift; path = ../NuevoFugitivoVieCon.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		503B3D321D9FBC8D005F155E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503B3D5D1D9FE56B005F155E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		503B3D2C1D9FBC8D005F155E = {
+			isa = PBXGroup;
+			children = (
+				503B3DA51D9FE8AF005F155E /* Model */,
+				503B3D5C1D9FE56B005F155E /* CoreData.framework */,
+				503B3D531D9FC602005F155E /* assets */,
+				503B3D371D9FBC8D005F155E /* BrouryHunter */,
+				503B3D361D9FBC8D005F155E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		503B3D361D9FBC8D005F155E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				503B3D351D9FBC8D005F155E /* BrouryHunter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		503B3D371D9FBC8D005F155E /* BrouryHunter */ = {
+			isa = PBXGroup;
+			children = (
+				503B3D511D9FC51E005F155E /* Constans.swift */,
+				5052E9011DA9688C00FB49FF /* NuevoFugitivoVieCon.swift */,
+				5052E8F71DA93EA100FB49FF /* FugitivosTableViewController.swift */,
+				5052E8FF1DA953F600FB49FF /* CapturadosTabVieCon.swift */,
+				5052E8FD1DA9537700FB49FF /* CapturadosTableViewController.swift */,
+				503B3D381D9FBC8D005F155E /* AppDelegate.swift */,
+				503B3D5A1D9FE046005F155E /* BountyHunter.sqlite */,
+				503B3D3A1D9FBC8D005F155E /* ViewController.swift */,
+				503B3D3C1D9FBC8D005F155E /* Main.storyboard */,
+				503B3D4A1D9FBCE5005F155E /* CumtomLabel.swift */,
+				503B3D541D9FCF3F005F155E /* CustomTextField.swift */,
+				503B3D3F1D9FBC8D005F155E /* Assets.xcassets */,
+				503B3D411D9FBC8D005F155E /* LaunchScreen.storyboard */,
+				503B3D441D9FBC8D005F155E /* Info.plist */,
+			);
+			path = BrouryHunter;
+			sourceTree = "<group>";
+		};
+		503B3D531D9FC602005F155E /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				503B3D4C1D9FBD1F005F155E /* Champagne & Limousines Bold.ttf */,
+				503B3D4E1D9FC1D1005F155E /* Champagne & Limousines.ttf */,
+			);
+			name = assets;
+			path = BrouryHunter;
+			sourceTree = "<group>";
+		};
+		503B3DA51D9FE8AF005F155E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5052E8F91DA9452100FB49FF /* Fugitive+CoreDataProperties.swift */,
+				5052E8FA1DA9452100FB49FF /* Fugitive.swift */,
+				503B3DA21D9FE8A4005F155E /* BountyHunterModel.xcdatamodeld */,
+				503B3DA61D9FEEEC005F155E /* DBManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		503B3D341D9FBC8D005F155E /* BrouryHunter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 503B3D471D9FBC8D005F155E /* Build configuration list for PBXNativeTarget "BrouryHunter" */;
+			buildPhases = (
+				503B3D311D9FBC8D005F155E /* Sources */,
+				503B3D321D9FBC8D005F155E /* Frameworks */,
+				503B3D331D9FBC8D005F155E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrouryHunter;
+			productName = BrouryHunter;
+			productReference = 503B3D351D9FBC8D005F155E /* BrouryHunter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		503B3D2D1D9FBC8D005F155E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Valeriano Lopez";
+				TargetAttributes = {
+					503B3D341D9FBC8D005F155E = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WQT6P756RX;
+					};
+				};
+			};
+			buildConfigurationList = 503B3D301D9FBC8D005F155E /* Build configuration list for PBXProject "BrouryHunter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 503B3D2C1D9FBC8D005F155E;
+			productRefGroup = 503B3D361D9FBC8D005F155E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				503B3D341D9FBC8D005F155E /* BrouryHunter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		503B3D331D9FBC8D005F155E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503B3D501D9FC39A005F155E /* Champagne & Limousines Bold.ttf in Resources */,
+				503B3D4F1D9FC1D1005F155E /* Champagne & Limousines.ttf in Resources */,
+				503B3D5B1D9FE046005F155E /* BountyHunter.sqlite in Resources */,
+				503B3D431D9FBC8D005F155E /* LaunchScreen.storyboard in Resources */,
+				503B3D401D9FBC8D005F155E /* Assets.xcassets in Resources */,
+				503B3D3E1D9FBC8D005F155E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		503B3D311D9FBC8D005F155E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503B3D4B1D9FBCE5005F155E /* CumtomLabel.swift in Sources */,
+				503B3D3B1D9FBC8D005F155E /* ViewController.swift in Sources */,
+				503B3D521D9FC51E005F155E /* Constans.swift in Sources */,
+				503B3D391D9FBC8D005F155E /* AppDelegate.swift in Sources */,
+				5052E8FC1DA9452100FB49FF /* Fugitive.swift in Sources */,
+				5052E9001DA953F600FB49FF /* CapturadosTabVieCon.swift in Sources */,
+				5052E8F81DA93EA100FB49FF /* FugitivosTableViewController.swift in Sources */,
+				5052E8FB1DA9452100FB49FF /* Fugitive+CoreDataProperties.swift in Sources */,
+				5052E8FE1DA9537700FB49FF /* CapturadosTableViewController.swift in Sources */,
+				5052E9021DA9688C00FB49FF /* NuevoFugitivoVieCon.swift in Sources */,
+				503B3DA41D9FE8A4005F155E /* BountyHunterModel.xcdatamodeld in Sources */,
+				503B3D551D9FCF3F005F155E /* CustomTextField.swift in Sources */,
+				503B3DA71D9FEEEC005F155E /* DBManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		503B3D3C1D9FBC8D005F155E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				503B3D3D1D9FBC8D005F155E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		503B3D411D9FBC8D005F155E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				503B3D421D9FBC8D005F155E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		503B3D451D9FBC8D005F155E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		503B3D461D9FBC8D005F155E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		503B3D481D9FBC8D005F155E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BrouryHunter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.lpz.valeriano.BrouryHunter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		503B3D491D9FBC8D005F155E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BrouryHunter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.lpz.valeriano.BrouryHunter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		503B3D301D9FBC8D005F155E /* Build configuration list for PBXProject "BrouryHunter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503B3D451D9FBC8D005F155E /* Debug */,
+				503B3D461D9FBC8D005F155E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		503B3D471D9FBC8D005F155E /* Build configuration list for PBXNativeTarget "BrouryHunter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503B3D481D9FBC8D005F155E /* Debug */,
+				503B3D491D9FBC8D005F155E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		503B3DA21D9FE8A4005F155E /* BountyHunterModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				503B3DA31D9FE8A4005F155E /* BountyHunterModel.xcdatamodel */,
+			);
+			currentVersion = 503B3DA31D9FE8A4005F155E /* BountyHunterModel.xcdatamodel */;
+			path = BountyHunterModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 503B3D2D1D9FBC8D005F155E /* Project object */;
+}

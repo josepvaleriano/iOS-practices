@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Encuestas
+
+  Created by Angel Gonzalez on 23/08/14.
+  Copyright (c) 2014 Angel Gonzalez. All rights reserved.
+*/
+
+
+///  pantalla 1
+"titulo1" = "Personal Information";
+"label1-1" = "Name(s)";
+"label2-1" = "Last Name";
+"label3-1" = "Birthdate";
+"button1-1" = "Next";
+"legalFileName" = "LegalStatemenst-EN";

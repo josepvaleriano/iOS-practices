@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FileVersion</key>
+	<integer>4</integer>
+	<key>Source</key>
+	<dict>
+		<key>35230</key>
+		<dict>
+			<key>CountryMinVersions</key>
+			<dict>
+				<key>CN</key>
+				<integer>1</integer>
+				<key>OTHER</key>
+				<integer>0</integer>
+			</dict>
+			<key>CurrentVersion</key>
+			<integer>1</integer>
+			<key>NoResultErrorIsSuccess</key>
+			<true/>
+		</dict>
+		<key>7618</key>
+		<dict>
+			<key>AddCountyIfNeeded</key>
+			<true/>
+			<key>CountryMinVersions</key>
+			<dict>
+				<key>OTHER</key>
+				<integer>5</integer>
+			</dict>
+			<key>CurrentVersion</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

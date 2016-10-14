@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BrouryHunter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec5-hT-NJQ" customClass="CumtomLabel" customModule="BrouryHunter" customModuleProvider="target">
+                                <rect key="frame" x="35" y="35" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNn-Ha-cHu" customClass="CumtomLabel" customModule="BrouryHunter" customModuleProvider="target">
+                                <rect key="frame" x="35" y="86" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkS-lR-5KN" customClass="CumtomLabel" customModule="BrouryHunter" customModuleProvider="target">
+                                <rect key="frame" x="35" y="137" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DATO 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6z4-Hc-aXX" customClass="CustomTextField" customModule="BrouryHunter" customModuleProvider="target">
+                                <rect key="frame" x="121" y="133" width="165" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DATO 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UNS-0b-eCf" customClass="CustomTextField" customModule="BrouryHunter" customModuleProvider="target">
+                                <rect key="frame" x="121" y="82" width="165" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mk-2v-9cz">
+                                <rect key="frame" x="149" y="208" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="qbq-Ln-fff" kind="show" id="Cuw-TV-MJI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qkS-lR-5KN" firstAttribute="top" secondItem="nNn-Ha-cHu" secondAttribute="bottom" constant="30" id="Qmn-pj-jSK"/>
+                            <constraint firstItem="qkS-lR-5KN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="SL8-vz-xph"/>
+                            <constraint firstItem="8Mk-2v-9cz" firstAttribute="top" secondItem="6z4-Hc-aXX" secondAttribute="bottom" constant="40" id="SOn-s5-nfk"/>
+                            <constraint firstItem="nNn-Ha-cHu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="T71-dR-hyo"/>
+                            <constraint firstItem="6z4-Hc-aXX" firstAttribute="leading" secondItem="qkS-lR-5KN" secondAttribute="trailing" constant="30" id="UTy-7y-UsH"/>
+                            <constraint firstItem="nNn-Ha-cHu" firstAttribute="top" secondItem="ec5-hT-NJQ" secondAttribute="bottom" constant="30" id="Zb1-ke-ASs"/>
+                            <constraint firstItem="8Mk-2v-9cz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eAc-4A-KwK"/>
+                            <constraint firstItem="UNS-0b-eCf" firstAttribute="leading" secondItem="nNn-Ha-cHu" secondAttribute="trailing" constant="30" id="fLE-Cb-B13"/>
+                            <constraint firstItem="ec5-hT-NJQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="lCD-Bx-n9t"/>
+                            <constraint firstItem="ec5-hT-NJQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="ouG-Am-rM6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="418"/>
+        </scene>
+        <!--Fugitivo-->
+        <scene sceneID="dKF-dW-2si">
+            <objects>
+                <tableViewController title="Fugitivo" id="rHj-BQ-Hu9" customClass="FugitivosTableViewController" customModule="BrouryHunter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="w0W-tS-1hJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseID" id="fHv-GH-Dp0">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fHv-GH-Dp0" id="W0k-48-taA">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rHj-BQ-Hu9" id="Kzs-NZ-tkD"/>
+                            <outlet property="delegate" destination="rHj-BQ-Hu9" id="riM-uU-4fU"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Fugitivos" id="BJA-MR-SG8">
+                        <barButtonItem key="rightBarButtonItem" title="+ Fugitivo" id="qxa-7a-4Ij">
+                            <connections>
+                                <action selector="btnNuevoTouch:" destination="rHj-BQ-Hu9" id="5PV-ce-xCj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="O1l-js-2Ep" kind="show" identifier="nuevo" id="tWx-f1-aPt"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06u-Lb-6zK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1642" y="418"/>
+        </scene>
+        <!--Nuevo fugitivo-->
+        <scene sceneID="DHu-jM-FzQ">
+            <objects>
+                <viewController title="Nuevo fugitivo" id="O1l-js-2Ep" customClass="NuevoFugitivoVieCon" customModule="BrouryHunter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YzC-MG-Cun"/>
+                        <viewControllerLayoutGuide type="bottom" id="qPZ-ZA-Qom"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rEd-yA-MG4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Captura nuevo fugitivo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2G-aP-SmO" customClass="CumtomLabel" customModule="BrouryHunter" customModuleProvider="target">
+                                <rect key="frame" x="30" y="81" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoM-g5-Vg3" customClass="CumtomLabel" customModule="BrouryHunter" customModuleProvider="target">
+                                <rect key="frame" x="30" y="125" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delito:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsn-KN-7gU" customClass="CumtomLabel" customModule="BrouryHunter" customModuleProvider="target">
+                                <rect key="frame" x="30" y="166" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Recompensa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ms-TJ-pHA" customClass="CumtomLabel" customModule="BrouryHunter" customModuleProvider="target">
+                                <rect key="frame" x="30" y="205" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre del fugitivo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="19j-z6-hE3" customClass="CustomTextField" customModule="BrouryHunter" customModuleProvider="target">
+                                <rect key="frame" x="144" y="117" width="226" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="sWB-V1-YEP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Delito cometido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cNV-Um-16e" customClass="CustomTextField" customModule="BrouryHunter" customModuleProvider="target">
+                                <rect key="frame" x="144" y="157" width="226" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="KlQ-Nb-E2U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVf-F5-tVx">
+                                <rect key="frame" x="122" y="276" width="56" height="30"/>
+                                <state key="normal" title="Guardar"/>
+                                <connections>
+                                    <action selector="btnGuardar:" destination="O1l-js-2Ep" eventType="touchUpInside" id="uoo-Mo-kBJ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recompensa por capturarlo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TZq-Ec-H6I" customClass="CustomTextField" customModule="BrouryHunter" customModuleProvider="target">
+                                <rect key="frame" x="144" y="201" width="226" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rsn-KN-7gU" firstAttribute="top" secondItem="UoM-g5-Vg3" secondAttribute="bottom" constant="20" id="9K3-px-EKf"/>
+                            <constraint firstItem="UoM-g5-Vg3" firstAttribute="leading" secondItem="rEd-yA-MG4" secondAttribute="leadingMargin" constant="10" id="AZa-x1-Brb"/>
+                            <constraint firstItem="0ms-TJ-pHA" firstAttribute="top" secondItem="Rsn-KN-7gU" secondAttribute="bottom" constant="20" id="PDF-1i-Zcp"/>
+                            <constraint firstItem="nVf-F5-tVx" firstAttribute="top" secondItem="TZq-Ec-H6I" secondAttribute="bottom" constant="40" id="Puk-Xg-bRT"/>
+                            <constraint firstItem="J2G-aP-SmO" firstAttribute="top" secondItem="YzC-MG-Cun" secondAttribute="bottom" constant="20" id="TFv-LO-Qxm"/>
+                            <constraint firstItem="0ms-TJ-pHA" firstAttribute="leading" secondItem="rEd-yA-MG4" secondAttribute="leadingMargin" constant="10" id="ePu-Du-LuT"/>
+                            <constraint firstItem="19j-z6-hE3" firstAttribute="leading" secondItem="UoM-g5-Vg3" secondAttribute="trailing" constant="40" id="f6j-Xe-H8n"/>
+                            <constraint firstItem="J2G-aP-SmO" firstAttribute="leading" secondItem="rEd-yA-MG4" secondAttribute="leadingMargin" constant="10" id="flq-Ol-2B5"/>
+                            <constraint firstItem="cNV-Um-16e" firstAttribute="leading" secondItem="Rsn-KN-7gU" secondAttribute="trailing" constant="40" id="knB-br-Ear"/>
+                            <constraint firstItem="UoM-g5-Vg3" firstAttribute="top" secondItem="J2G-aP-SmO" secondAttribute="bottom" constant="20" id="q0t-6o-CAA"/>
+                            <constraint firstItem="TZq-Ec-H6I" firstAttribute="leading" secondItem="0ms-TJ-pHA" secondAttribute="trailing" constant="10" id="vYp-ZQ-OY7"/>
+                            <constraint firstItem="Rsn-KN-7gU" firstAttribute="leading" secondItem="rEd-yA-MG4" secondAttribute="leadingMargin" constant="10" id="xXW-Vz-VeV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtDelito" destination="cNV-Um-16e" id="uAb-Gz-GgT"/>
+                        <outlet property="txtNombre" destination="19j-z6-hE3" id="IJt-kA-tvp"/>
+                        <outlet property="txtRecompensa" destination="TZq-Ec-H6I" id="TCi-kF-9Ga"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85b-IR-Paj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2327" y="418"/>
+        </scene>
+        <!--Fugitivos-->
+        <scene sceneID="ea3-1A-aZD">
+            <objects>
+                <navigationController title="Fugitivos" id="4hj-EB-FFG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="uWO-i6-Tqg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V8S-on-peQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rHj-BQ-Hu9" kind="relationship" relationship="rootViewController" id="zQM-bd-6dU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="csk-CA-6hT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="418"/>
+        </scene>
+        <!--Capturado-->
+        <scene sceneID="jst-C5-2q9">
+            <objects>
+                <tableViewController title="Capturado" id="wvH-DC-IiW" customClass="CapturadosTabVieCon" customModule="BrouryHunter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="J5L-8l-MQJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="reuseID" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseID" id="eUn-fD-6zQ">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eUn-fD-6zQ" id="WVa-ia-8vu">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wvH-DC-IiW" id="Nd2-Hs-Ulw"/>
+                            <outlet property="delegate" destination="wvH-DC-IiW" id="gbe-a7-oVg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="4Zl-JB-GHF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7s-zA-LUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1616" y="1121"/>
+        </scene>
+        <!--Capturados-->
+        <scene sceneID="LNd-Gg-lFX">
+            <objects>
+                <navigationController title="Capturados" id="JhN-HC-Tj1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Ucu-QZ-PwR"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hcq-y2-oen">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wvH-DC-IiW" kind="relationship" relationship="rootViewController" id="zoH-0y-TeA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNF-sA-caR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="1121"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8Qd-3n-OiW">
+            <objects>
+                <tabBarController id="qbq-Ln-fff" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="E85-zY-rBE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4hj-EB-FFG" kind="relationship" relationship="viewControllers" id="avd-QL-6j1"/>
+                        <segue destination="JhN-HC-Tj1" kind="relationship" relationship="viewControllers" id="UbR-30-H0g"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CGt-QW-yBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="1164"/>
+        </scene>
+    </scenes>
+</document>

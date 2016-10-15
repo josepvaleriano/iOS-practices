@@ -19,6 +19,7 @@
 		502804941DB15E3600E7A55E /* Responsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502804921DB15E3600E7A55E /* Responsable.swift */; };
 		502804961DB15FC300E7A55E /* PetCens.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 502804951DB15FC300E7A55E /* PetCens.sqlite */; };
 		502804981DB1680700E7A55E /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502804971DB1680700E7A55E /* DBManager.swift */; };
+		504888D01DB23872006A49BE /* CapturaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504888CF1DB23872006A49BE /* CapturaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		502804921DB15E3600E7A55E /* Responsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responsable.swift; sourceTree = "<group>"; };
 		502804951DB15FC300E7A55E /* PetCens.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = PetCens.sqlite; sourceTree = "<group>"; };
 		502804971DB1680700E7A55E /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		504888CF1DB23872006A49BE /* CapturaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				5028047B1DB1586500E7A55E /* Assets.xcassets */,
 				5028047D1DB1586500E7A55E /* LaunchScreen.storyboard */,
 				502804801DB1586500E7A55E /* Info.plist */,
+				504888CF1DB23872006A49BE /* CapturaViewController.swift */,
 			);
 			path = PetCent;
 			sourceTree = "<group>";
@@ -85,8 +88,8 @@
 		502804881DB15A7800E7A55E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				502804951DB15FC300E7A55E /* PetCens.sqlite */,
 				502804911DB15E3600E7A55E /* Responsable+CoreDataProperties.swift */,
+				502804951DB15FC300E7A55E /* PetCens.sqlite */,
 				502804921DB15E3600E7A55E /* Responsable.swift */,
 				5028048E1DB15C0200E7A55E /* PetCens.xcdatamodeld */,
 				502804971DB1680700E7A55E /* DBManager.swift */,
@@ -172,6 +175,7 @@
 				502804701DB1586400E7A55E /* AppDelegate.swift in Sources */,
 				502804981DB1680700E7A55E /* DBManager.swift in Sources */,
 				502804751DB1586400E7A55E /* MasterViewController.swift in Sources */,
+				504888D01DB23872006A49BE /* CapturaViewController.swift in Sources */,
 				502804771DB1586400E7A55E /* DetailViewController.swift in Sources */,
 				502804901DB15C0200E7A55E /* PetCens.xcdatamodeld in Sources */,
 			);
@@ -329,6 +333,7 @@
 				502804851DB1586500E7A55E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

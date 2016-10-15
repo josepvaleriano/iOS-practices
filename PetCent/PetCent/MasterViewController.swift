@@ -39,11 +39,12 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     }
 
     func insertNewObject(sender: AnyObject) {
+        /*
         let context = self.fetchedResultsController.managedObjectContext
         let entity = self.fetchedResultsController.fetchRequest.entity!
         let newManagedObject = NSEntityDescription.insertNewObjectForEntityForName(entity.name!, inManagedObjectContext: context)
              
-        // If appropriate, configure the new managed object.
+        // If appropriate, configure the new managed object.  crea objeto date
         // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
         newManagedObject.setValue(NSDate(), forKey: "fechaNacimiento")
              
@@ -56,6 +57,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             //print("Unresolved error \(error), \(error.userInfo)")
             abort()
         }
+        */
+        self.performSegueWithIdentifier("sgCapturar", sender: self)
     }
 
     // MARK: - Segues

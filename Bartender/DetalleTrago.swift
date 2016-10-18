@@ -42,8 +42,8 @@ class DetalleTrago: UIViewController {
         let dire = self.info?["directions"] as! String
         txtBebida.text = self.info?["name"] as! String
         imgDrink.image = UIImage(named: self.info?["image"] as! String)
-        txtIngredientes.text = "Ingredientes:" + ingre
-        txtDirection.text = "Prepared:"+ dire
+        txtIngredientes.text = ingre
+        txtDirection.text =  dire
         
     }
 

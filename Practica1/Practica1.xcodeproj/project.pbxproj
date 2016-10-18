@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		502F282C1DB6B42D006A026C /* Champagne & Limousines.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 502F282B1DB6B42D006A026C /* Champagne & Limousines.ttf */; };
+		502F282E1DB6B4E9006A026C /* CumtomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F282D1DB6B4E9006A026C /* CumtomLabel.swift */; };
+		502F28301DB6B512006A026C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F282F1DB6B512006A026C /* CustomTextField.swift */; };
 		50643CD51D9ECC2C001F2544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50643CD41D9ECC2C001F2544 /* AppDelegate.swift */; };
 		50643CD71D9ECC2C001F2544 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50643CD61D9ECC2C001F2544 /* ViewController.swift */; };
 		50643CDA1D9ECC2C001F2544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50643CD81D9ECC2C001F2544 /* Main.storyboard */; };
@@ -51,6 +54,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		502F282B1DB6B42D006A026C /* Champagne & Limousines.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines.ttf"; sourceTree = "<group>"; };
+		502F282D1DB6B4E9006A026C /* CumtomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CumtomLabel.swift; path = estados/CumtomLabel.swift; sourceTree = "<group>"; };
+		502F282F1DB6B512006A026C /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		50643CD11D9ECC2B001F2544 /* Practica1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practica1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50643CD41D9ECC2C001F2544 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50643CD61D9ECC2C001F2544 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		502F282A1DB6B414006A026C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				502F282B1DB6B42D006A026C /* Champagne & Limousines.ttf */,
+			);
+			name = assets;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		50643CC81D9ECC2B001F2544 = {
 			isa = PBXGroup;
 			children = (
@@ -126,9 +141,12 @@
 		50643CD31D9ECC2C001F2544 /* Practica1 */ = {
 			isa = PBXGroup;
 			children = (
+				502F282A1DB6B414006A026C /* assets */,
 				50643D2B1D9ECD8B001F2544 /* edo-mun.plist */,
 				50643CE61D9ECD79001F2544 /* estados */,
 				50643CD41D9ECC2C001F2544 /* AppDelegate.swift */,
+				502F282D1DB6B4E9006A026C /* CumtomLabel.swift */,
+				502F282F1DB6B512006A026C /* CustomTextField.swift */,
 				50643CD61D9ECC2C001F2544 /* ViewController.swift */,
 				50643D2F1D9EF6E3001F2544 /* DetalleEstado.swift */,
 				50643D2D1D9EDD4F001F2544 /* ListaEstados.swift */,
@@ -251,6 +269,7 @@
 				50643D261D9ECD79001F2544 /* tamaulipas.png in Resources */,
 				50643CDF1D9ECC2C001F2544 /* LaunchScreen.storyboard in Resources */,
 				50643CDC1D9ECC2C001F2544 /* Assets.xcassets in Resources */,
+				502F282C1DB6B42D006A026C /* Champagne & Limousines.ttf in Resources */,
 				50643D1F1D9ECD79001F2544 /* puebla.png in Resources */,
 				50643D191D9ECD79001F2544 /* mapa.png in Resources */,
 				50643D181D9ECD79001F2544 /* jalisco.png in Resources */,
@@ -286,7 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502F282E1DB6B4E9006A026C /* CumtomLabel.swift in Sources */,
 				50643D2E1D9EDD4F001F2544 /* ListaEstados.swift in Sources */,
+				502F28301DB6B512006A026C /* CustomTextField.swift in Sources */,
 				50643D301D9EF6E3001F2544 /* DetalleEstado.swift in Sources */,
 				50643CD71D9ECC2C001F2544 /* ViewController.swift in Sources */,
 				50643CD51D9ECC2C001F2544 /* AppDelegate.swift in Sources */,
@@ -447,6 +468,7 @@
 				50643CE51D9ECC2C001F2544 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -51,10 +51,11 @@
                                             <segue destination="9c7-ng-DNS" kind="show" id="TOy-CT-sLF"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="15.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Qoi-GV-0fe">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="15.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Qoi-GV-0fe">
                                         <rect key="frame" x="233" y="267" width="110" height="128"/>
                                     </imageView>
                                 </subviews>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="NlJ-2y-LaF" firstAttribute="top" secondItem="DAP-lv-cQW" secondAttribute="bottom" constant="30" id="1Ry-yL-yOl"/>
                                     <constraint firstItem="NlJ-2y-LaF" firstAttribute="centerX" secondItem="erg-M3-dIe" secondAttribute="centerX" id="1kq-eM-C9H"/>
@@ -69,7 +70,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.22718506620000001" green="1" blue="0.91081998860000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.18402449349184868" green="0.58431372550000005" blue="0.39474685301325219" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="erg-M3-dIe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Kq-k8-D33" userLabel="Scrll Login.width = width"/>
                             <constraint firstItem="erg-M3-dIe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="xdJ-YY-6Ej" userLabel="Scrll Login.top = Top Layout Guide.bottom + 20"/>
@@ -91,7 +92,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hWe-yK-56G">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1840244935" green="0.58431372550000005" blue="0.39474685300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="9Kd-gL-AYe">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -99,7 +100,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Kd-gL-AYe" id="uD3-b5-Ncx">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.1840244935" green="0.58431372550000005" blue="0.39474685300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.1840244935" green="0.58431372550000005" blue="0.39474685300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="kXx-Fw-CmC" kind="show" id="c7p-FS-7Kc"/>
                                 </connections>
@@ -154,7 +157,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1840244935" green="0.58431372550000005" blue="0.39474685300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="YAb-7H-x10" firstAttribute="top" secondItem="yZ4-tL-HMC" secondAttribute="bottom" constant="20" id="3oq-cL-ztu"/>
                             <constraint firstItem="Y4Y-L2-wgc" firstAttribute="top" secondItem="YAb-7H-x10" secondAttribute="bottom" constant="20" id="Dnh-Jj-yFc"/>
@@ -199,6 +202,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="15.jpeg" width="300" height="300"/>
+        <image name="15.jpg" width="300" height="300"/>
     </resources>
 </document>

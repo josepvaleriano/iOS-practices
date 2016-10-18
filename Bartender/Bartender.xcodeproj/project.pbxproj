@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		502F28321DB6B56B006A026C /* Champagne & Limousines.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 502F28311DB6B56B006A026C /* Champagne & Limousines.ttf */; };
+		502F28341DB6B575006A026C /* CumtomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F28331DB6B575006A026C /* CumtomLabel.swift */; };
+		502F28361DB6B57F006A026C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F28351DB6B57F006A026C /* CustomTextField.swift */; };
+		502F28381DB6B68C006A026C /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F28371DB6B68C006A026C /* Constans.swift */; };
+		502F283B1DB6B9B2006A026C /* 15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 502F283A1DB6B9B2006A026C /* 15.jpg */; };
 		50343A4B1DA5901900B3755F /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50343A3C1DA5901900B3755F /* 1.jpg */; };
 		50343A4C1DA5901900B3755F /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50343A3D1DA5901900B3755F /* 10.jpg */; };
 		50343A4D1DA5901900B3755F /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50343A3E1DA5901900B3755F /* 11.jpg */; };
 		50343A4E1DA5901900B3755F /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50343A3F1DA5901900B3755F /* 12.jpg */; };
 		50343A4F1DA5901900B3755F /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50343A401DA5901900B3755F /* 13.jpg */; };
 		50343A501DA5901900B3755F /* 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50343A411DA5901900B3755F /* 14.jpg */; };
-		50343A511DA5901900B3755F /* 15.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 50343A421DA5901900B3755F /* 15.jpeg */; };
 		50343A521DA5901900B3755F /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50343A431DA5901900B3755F /* 2.jpg */; };
 		50343A531DA5901900B3755F /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50343A441DA5901900B3755F /* 3.jpg */; };
 		50343A541DA5901900B3755F /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50343A451DA5901900B3755F /* 4.jpg */; };
@@ -34,13 +38,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		502F28311DB6B56B006A026C /* Champagne & Limousines.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines.ttf"; sourceTree = "<group>"; };
+		502F28331DB6B575006A026C /* CumtomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CumtomLabel.swift; sourceTree = "<group>"; };
+		502F28351DB6B57F006A026C /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		502F28371DB6B68C006A026C /* Constans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		502F28391DB6B69B006A026C /* Champagne & Limousines Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines Bold.ttf"; sourceTree = "<group>"; };
+		502F283A1DB6B9B2006A026C /* 15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15.jpg; sourceTree = "<group>"; };
 		50343A3C1DA5901900B3755F /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		50343A3D1DA5901900B3755F /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		50343A3E1DA5901900B3755F /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
 		50343A3F1DA5901900B3755F /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
 		50343A401DA5901900B3755F /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
 		50343A411DA5901900B3755F /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
-		50343A421DA5901900B3755F /* 15.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15.jpeg; sourceTree = "<group>"; };
 		50343A431DA5901900B3755F /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		50343A441DA5901900B3755F /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		50343A451DA5901900B3755F /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
@@ -81,8 +90,8 @@
 				50343A3E1DA5901900B3755F /* 11.jpg */,
 				50343A3F1DA5901900B3755F /* 12.jpg */,
 				50343A401DA5901900B3755F /* 13.jpg */,
+				502F283A1DB6B9B2006A026C /* 15.jpg */,
 				50343A411DA5901900B3755F /* 14.jpg */,
-				50343A421DA5901900B3755F /* 15.jpeg */,
 				50343A431DA5901900B3755F /* 2.jpg */,
 				50343A441DA5901900B3755F /* 3.jpg */,
 				50343A451DA5901900B3755F /* 4.jpg */,
@@ -99,6 +108,8 @@
 		50343A5A1DA5903000B3755F /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				502F28311DB6B56B006A026C /* Champagne & Limousines.ttf */,
+				502F28391DB6B69B006A026C /* Champagne & Limousines Bold.ttf */,
 				50343A5B1DA5906500B3755F /* Drinks.plist */,
 				50343A3B1DA5901900B3755F /* drinksImages */,
 			);
@@ -125,7 +136,10 @@
 		50483A0F1DA2EE29009FD4AF /* Bartender */ = {
 			isa = PBXGroup;
 			children = (
+				502F28371DB6B68C006A026C /* Constans.swift */,
 				50845B481DAECBC3006D65EB /* DetalleTrago.swift */,
+				502F28351DB6B57F006A026C /* CustomTextField.swift */,
+				502F28331DB6B575006A026C /* CumtomLabel.swift */,
 				50448A7C1DA6DE46007A26E2 /* ListaTragos.swift */,
 				50483A101DA2EE29009FD4AF /* AppDelegate.swift */,
 				50483A121DA2EE29009FD4AF /* ViewController.swift */,
@@ -199,7 +213,6 @@
 			files = (
 				50343A521DA5901900B3755F /* 2.jpg in Resources */,
 				50343A501DA5901900B3755F /* 14.jpg in Resources */,
-				50343A511DA5901900B3755F /* 15.jpeg in Resources */,
 				50343A531DA5901900B3755F /* 3.jpg in Resources */,
 				50343A4C1DA5901900B3755F /* 10.jpg in Resources */,
 				50343A4F1DA5901900B3755F /* 13.jpg in Resources */,
@@ -211,8 +224,10 @@
 				50343A561DA5901900B3755F /* 6.jpg in Resources */,
 				50343A4D1DA5901900B3755F /* 11.jpg in Resources */,
 				50343A581DA5901900B3755F /* 8.jpg in Resources */,
+				502F283B1DB6B9B2006A026C /* 15.jpg in Resources */,
 				50343A571DA5901900B3755F /* 7.jpg in Resources */,
 				50483A1B1DA2EE29009FD4AF /* Assets.xcassets in Resources */,
+				502F28321DB6B56B006A026C /* Champagne & Limousines.ttf in Resources */,
 				50343A551DA5901900B3755F /* 5.jpg in Resources */,
 				50483A161DA2EE29009FD4AF /* Main.storyboard in Resources */,
 				50343A541DA5901900B3755F /* 4.jpg in Resources */,
@@ -226,9 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502F28361DB6B57F006A026C /* CustomTextField.swift in Sources */,
 				50483A131DA2EE29009FD4AF /* ViewController.swift in Sources */,
+				502F28381DB6B68C006A026C /* Constans.swift in Sources */,
 				50845B491DAECBC3006D65EB /* DetalleTrago.swift in Sources */,
 				50448A7D1DA6DE46007A26E2 /* ListaTragos.swift in Sources */,
+				502F28341DB6B575006A026C /* CumtomLabel.swift in Sources */,
 				50483A111DA2EE29009FD4AF /* AppDelegate.swift in Sources */,
 				50483A191DA2EE29009FD4AF /* Bartender.xcdatamodeld in Sources */,
 			);

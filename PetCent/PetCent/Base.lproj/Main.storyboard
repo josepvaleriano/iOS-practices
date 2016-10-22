@@ -169,17 +169,29 @@
                             <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0go-Sl-VdT">
                                 <rect key="frame" x="20" y="285" width="256" height="80"/>
                             </pickerView>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yyd-6K-BSf">
+                                <rect key="frame" x="20" y="496" width="276" height="96"/>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ztF-wd-Jte">
+                                <rect key="frame" x="20" y="373" width="266" height="95"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0go-Sl-VdT" firstAttribute="leading" secondItem="e4M-0g-dcp" secondAttribute="leadingMargin" constant="10" id="07p-bL-ndw"/>
                             <constraint firstItem="XJ8-Rb-Eu3" firstAttribute="centerX" secondItem="e4M-0g-dcp" secondAttribute="centerX" id="3RO-6L-eb0"/>
+                            <constraint firstItem="ztF-wd-Jte" firstAttribute="top" secondItem="0go-Sl-VdT" secondAttribute="bottom" constant="20" id="Ovp-gB-jaM"/>
                             <constraint firstItem="0go-Sl-VdT" firstAttribute="top" secondItem="XJ8-Rb-Eu3" secondAttribute="bottom" constant="20" id="P8I-NZ-0iq"/>
+                            <constraint firstItem="yyd-6K-BSf" firstAttribute="leading" secondItem="e4M-0g-dcp" secondAttribute="leadingMargin" constant="10" id="dus-xj-QPT"/>
+                            <constraint firstItem="ztF-wd-Jte" firstAttribute="leading" secondItem="e4M-0g-dcp" secondAttribute="leadingMargin" constant="10" id="fFr-1W-ugg"/>
+                            <constraint firstItem="yyd-6K-BSf" firstAttribute="top" secondItem="ztF-wd-Jte" secondAttribute="bottom" constant="20" id="qiD-fh-tdw"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="pickerCols" destination="yyd-6K-BSf" id="0IJ-Vl-HhZ"/>
                         <outlet property="pickerEdos" destination="0go-Sl-VdT" id="Loc-IX-8DV"/>
                         <outlet property="pickerFechaNacimiento" destination="mUI-4i-i6g" id="VLL-Og-XBo"/>
+                        <outlet property="pickerMun" destination="ztF-wd-Jte" id="iEj-zP-mUM"/>
                         <outlet property="txtApellidos" destination="J2a-ZC-gcL" id="Nux-9V-zKo"/>
                         <outlet property="txtCalle" destination="2WP-Uz-hFB" id="ghX-xZ-biS"/>
                         <outlet property="txtColonia" destination="FoR-9N-esF" id="B6j-Hs-jhP"/>

@@ -44,17 +44,24 @@ UIPickerViewDelegate, UIPickerViewDataSource{
         // Do any additional setup after loading the view.
         // se inicializa los arreglos para que no cracs los combos
         self.pickerEdos.delegate = self
+        self.pickerEdos.dataSource = self
+        
         self.estados = NSArray()
+        self.pickerMun.delegate = self
+        self.pickerMun.dataSource = self
         self.municipios = ["datos 1"," jhon","doe"] // NSArray()
+        self.pickerCols.delegate = self
+        self.pickerCols.dataSource = self
         //tarea inicializar con arreglo de cualqueir cosa tipo json
         self.colonias =  ["tequila"," mezcal","jarana"] //NSArray()ΩNSArray()
         self.consultaEstados()
     }
-    
+
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         ocultaPickers()
     }
+    
     @IBAction func pickerDateChang(sender: AnyObject) {
         // se crea el tipo date , se da formato y se asocia al txtrFN
         let formato = NSDateFormatter()
@@ -68,7 +75,7 @@ UIPickerViewDelegate, UIPickerViewDataSource{
         var elFrame:CGRect = elPicker.frame
         UIView.animateWithDuration(2.5, animations: {
             if subeOBaja {
-                elFrame.origin.y = CGRectGetMaxY(self.txtFechaNacimiento.frame)
+                elFrame.origin.y = CGRectGetMaxY(elPicker.frame)
                 elPicker.hidden = false
             }
             else{
@@ -100,6 +107,8 @@ UIPickerViewDelegate, UIPickerViewDataSource{
     }
     
 
+    //edg3.mx/webservicessepomex/sepomex.asmx
+    //http://edg3.mx/webservicessepomex/sepomex.asmx
     
     
     func ocultaPickers(){
@@ -109,23 +118,37 @@ UIPickerViewDelegate, UIPickerViewDataSource{
         self.pickerFechaNacimiento.frame = CGRectMake(unFrame.origin.x, CGRectGetMinY(self.view.frame), unFrame.size.width, unFrame.size.height)
         self.pickerFechaNacimiento.hidden = true
     }
+    
     // el web service es asincrono por que no se sabe el tiempo de respuesta
     func consultaEstados(){
-        let urlString = "http://edg3.mx/webservicessepomex/WMRegresaEstados.php"
-        let laUrl = NSURL(string:urlString)!
-        let elRequest = NSURLRequest(URL: laUrl)
-        self.datosRecibidos = NSMutableData(capacity:0)
-        self.conexion = NSURLConnection(request: elRequest, delegate: self)
-        if self.conexion == nil{
-            self.datosRecibidos = nil
-            self.conexion = nil
-            print("No se puede acceder al Ws Estados")
+        
+        if (ConnectionManager.hayConexion()){
+            if !ConnectionManager.esConexionWifi() {
+                print("Si hay conexion if ask download data")
+            }
             
+            let urlString = "http://edg3.mx/webservicessepomex/WMRegresaEstados.php"
+            let laUrl = NSURL(string:urlString)!
+            let elRequest = NSURLRequest(URL: laUrl)
+            self.datosRecibidos = NSMutableData(capacity:0)
+            self.conexion = NSURLConnection(request: elRequest, delegate: self)
+            if self.conexion == nil{
+                self.datosRecibidos = nil
+                self.conexion = nil
+                print("No se puede acceder al Ws Estados")
+                
+            }
+            else{
+                print("carga estados ")
+            }
         }
         else{
-            
+            print("No hay conexion wi-fi or data")
         }
     }
+    
+    
+    
     // en automatico ejeecuta este cuando se ejecuta  self.conexion = NSURLConnection(request: elRequest, delegate: self)
     func connection(connection: NSURLConnection, didFailWithError error: NSError){
         self.datosRecibidos = nil
@@ -143,7 +166,7 @@ UIPickerViewDelegate, UIPickerViewDataSource{
         
     }
     
-    // cuando termina la petision
+    // cuando termina la peticion
     func connectionDidFinishLoading(connection: NSURLConnection){
         // el arreglo de betyys se convierte a arreglo de json
         do{
@@ -170,6 +193,7 @@ UIPickerViewDelegate, UIPickerViewDataSource{
         return 1
     }
     
+    //metodo encargado de especificar la cantidad de elementos por piker
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
         if (pickerView.isEqual(self.pickerEdos)){
             return self.estados!.count
@@ -181,9 +205,9 @@ UIPickerViewDelegate, UIPickerViewDataSource{
             return self.colonias!.count
         }
         
-    }
+    }	
     
-    // se debe
+    // metodo encargado de llenar datos
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?{
         if (pickerView.isEqual(self.pickerEdos)){
             return (self.estados![row].valueForKey("nombreEstado") as! String)
@@ -193,6 +217,19 @@ UIPickerViewDelegate, UIPickerViewDataSource{
         }
         else {
             return (self.colonias![row] as! String)
+        }
+        
+    }
+    // metodo para poner lo seleccionado a text que lo llamo
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
+        //que fila selcciono  //y que componente seleccion , ejemplo la fecha tiene 3 componentes
+        if pickerView.isEqual(self.pickerEdos) {
+            self.txtEstado.text = self.estados![row].valueForKey("nombreEstado") as? String
+            let codigoEstado = self.estados![row].valueForKey("c_estado") as! String
+            // invocar con el codigo el webservice de colonias
+            //buscaMunicipio(codigoEstado)
+             SOAPManager.instance.consultaMunicipio(codigoEstado)
+            //self.municipios = SOAPManager.instance.
         }
         
     }

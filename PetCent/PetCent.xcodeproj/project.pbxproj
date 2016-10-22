@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50102D061DBA7CA8009460BF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50102D051DBA7CA8009460BF /* SystemConfiguration.framework */; };
+		50102D081DBA7D41009460BF /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50102D071DBA7D41009460BF /* ConnectionManager.swift */; };
+		50102D0A1DBAD6C1009460BF /* SOAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50102D091DBAD6C1009460BF /* SOAPManager.swift */; };
 		502804701DB1586400E7A55E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028046F1DB1586400E7A55E /* AppDelegate.swift */; };
 		502804751DB1586400E7A55E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502804741DB1586400E7A55E /* MasterViewController.swift */; };
 		502804771DB1586400E7A55E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502804761DB1586400E7A55E /* DetailViewController.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50102D051DBA7CA8009460BF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		50102D071DBA7D41009460BF /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		50102D091DBAD6C1009460BF /* SOAPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPManager.swift; sourceTree = "<group>"; };
 		5028046C1DB1586400E7A55E /* PetCent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetCent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5028046F1DB1586400E7A55E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		502804741DB1586400E7A55E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50102D061DBA7CA8009460BF /* SystemConfiguration.framework in Frameworks */,
 				502804871DB15A1E00E7A55E /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +62,7 @@
 		502804631DB1586400E7A55E = {
 			isa = PBXGroup;
 			children = (
+				50102D051DBA7CA8009460BF /* SystemConfiguration.framework */,
 				502804881DB15A7800E7A55E /* Model */,
 				502804861DB15A1E00E7A55E /* CoreData.framework */,
 				5028046E1DB1586400E7A55E /* PetCent */,
@@ -81,6 +89,8 @@
 				5028047D1DB1586500E7A55E /* LaunchScreen.storyboard */,
 				502804801DB1586500E7A55E /* Info.plist */,
 				504888CF1DB23872006A49BE /* CapturaViewController.swift */,
+				50102D071DBA7D41009460BF /* ConnectionManager.swift */,
+				50102D091DBAD6C1009460BF /* SOAPManager.swift */,
 			);
 			path = PetCent;
 			sourceTree = "<group>";
@@ -172,8 +182,10 @@
 			files = (
 				502804931DB15E3600E7A55E /* Responsable+CoreDataProperties.swift in Sources */,
 				502804941DB15E3600E7A55E /* Responsable.swift in Sources */,
+				50102D0A1DBAD6C1009460BF /* SOAPManager.swift in Sources */,
 				502804701DB1586400E7A55E /* AppDelegate.swift in Sources */,
 				502804981DB1680700E7A55E /* DBManager.swift in Sources */,
+				50102D081DBA7D41009460BF /* ConnectionManager.swift in Sources */,
 				502804751DB1586400E7A55E /* MasterViewController.swift in Sources */,
 				504888D01DB23872006A49BE /* CapturaViewController.swift in Sources */,
 				502804771DB1586400E7A55E /* DetailViewController.swift in Sources */,

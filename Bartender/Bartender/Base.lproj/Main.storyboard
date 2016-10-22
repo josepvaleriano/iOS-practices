@@ -45,7 +45,11 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94M-Kq-9xd" userLabel="Ingresar">
                                         <rect key="frame" x="238" y="199" width="100" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <color key="backgroundColor" red="0.25886118299999999" green="0.73825473850000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.56958209950000005" green="1" blue="0.9564800161" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btnEntrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SYw-Pn-d04"/>
                                             <segue destination="9c7-ng-DNS" kind="show" id="TOy-CT-sLF"/>

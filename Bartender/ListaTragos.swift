@@ -18,6 +18,7 @@ class ListadoTragos: UITableViewController {
         let elPath = NSBundle.mainBundle().pathForResource("Drinks", ofType: "plist")
         self.losDrinks = NSArray(contentsOfFile:elPath!)
         self.navigationItem.title = "Tragos"
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -52,6 +53,14 @@ class ListadoTragos: UITableViewController {
         let laImagen = (doctInfo["image"] as! String).lowercaseString
         cell.imageView?.image = UIImage(named: laImagen)
         cell.indentationWidth = 10.0
+        
+        cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.textLabel?.font = UIFont (name:"Arial Rounded MT Bold", size:15.0)
+        cell.textLabel?.numberOfLines=2;
+        // cell.textLabel?.lineBreakMode =  UILineBreakModeMiddleTruncation;
+        cell.textLabel?.backgroundColor = UIColor.clearColor()
+        
+        
         return cell
     }
     

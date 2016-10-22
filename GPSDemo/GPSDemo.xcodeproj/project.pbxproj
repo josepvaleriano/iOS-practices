@@ -12,6 +12,9 @@
 		50540B7F1DBBD4E700ECD3EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50540B7D1DBBD4E700ECD3EC /* Main.storyboard */; };
 		50540B811DBBD4E700ECD3EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50540B801DBBD4E700ECD3EC /* Assets.xcassets */; };
 		50540B841DBBD4E700ECD3EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50540B821DBBD4E700ECD3EC /* LaunchScreen.storyboard */; };
+		50540B8C1DBBD6CE00ECD3EC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50540B8B1DBBD6CE00ECD3EC /* CoreLocation.framework */; };
+		50540B8E1DBBE6E900ECD3EC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50540B8D1DBBE6E900ECD3EC /* MapKit.framework */; };
+		50540B901DBBEA5300ECD3EC /* ElPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50540B8F1DBBEA5300ECD3EC /* ElPin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		50540B801DBBD4E700ECD3EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50540B831DBBD4E700ECD3EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50540B851DBBD4E700ECD3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50540B8B1DBBD6CE00ECD3EC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		50540B8D1DBBE6E900ECD3EC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		50540B8F1DBBEA5300ECD3EC /* ElPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElPin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50540B8E1DBBE6E900ECD3EC /* MapKit.framework in Frameworks */,
+				50540B8C1DBBD6CE00ECD3EC /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +46,8 @@
 		50540B6D1DBBD4E700ECD3EC = {
 			isa = PBXGroup;
 			children = (
+				50540B8D1DBBE6E900ECD3EC /* MapKit.framework */,
+				50540B8B1DBBD6CE00ECD3EC /* CoreLocation.framework */,
 				50540B781DBBD4E700ECD3EC /* GPSDemo */,
 				50540B771DBBD4E700ECD3EC /* Products */,
 			);
@@ -60,6 +70,7 @@
 				50540B801DBBD4E700ECD3EC /* Assets.xcassets */,
 				50540B821DBBD4E700ECD3EC /* LaunchScreen.storyboard */,
 				50540B851DBBD4E700ECD3EC /* Info.plist */,
+				50540B8F1DBBEA5300ECD3EC /* ElPin.swift */,
 			);
 			path = GPSDemo;
 			sourceTree = "<group>";
@@ -96,6 +107,7 @@
 				TargetAttributes = {
 					50540B751DBBD4E700ECD3EC = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WQT6P756RX;
 					};
 				};
 			};
@@ -135,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50540B901DBBEA5300ECD3EC /* ElPin.swift in Sources */,
 				50540B7C1DBBD4E700ECD3EC /* ViewController.swift in Sources */,
 				50540B7A1DBBD4E700ECD3EC /* AppDelegate.swift in Sources */,
 			);
@@ -251,7 +264,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GPSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.com.lpz.valeriano.GPSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,7 +277,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GPSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.com.lpz.valeriano.GPSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

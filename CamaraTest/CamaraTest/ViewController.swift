@@ -27,7 +27,7 @@ class ViewController: UIViewController , UINavigationControllerDelegate, UIImage
         let imagePickerController: UIImagePickerController=UIImagePickerController()
         imagePickerController.modalPresentationStyle = .CurrentContext
         //pregunta si selecciona fotos de la galeria
-        imagePickerController.sourceType = .PhotoLibrary
+        imagePickerController.sourceType = .Camera
         // pregunta si selecciona fotos de la camara
         //imagePickerController.sourceType = .SavedPhotosAlbum
         imagePickerController.delegate = self
@@ -45,8 +45,7 @@ class ViewController: UIViewController , UINavigationControllerDelegate, UIImage
     }
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        self.dismissViewControllerAnimated(true,
-                                           completion:nil)
+        self.dismissViewControllerAnimated(true, completion:nil)
     }
     
     
